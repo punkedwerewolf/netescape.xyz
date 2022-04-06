@@ -1,0 +1,24 @@
+:root {
+  --bgcolor: #c0c0c0;
+  --bordertop: 3px outset white;
+  --borderleft: 3px outset white;
+  --borderottom: 3px outset black;
+  --borderright: 3px outset black;
+  --mywidth: 210px;
+  --myheight: 200px;
+  --pcolor: black;
+  --pfamily: 'orbitronregular';
+  --pmargin: 5px;
+  --psize: 15px;
+  --h1color: black;
+  --h1family: 'orbitronregular';
+  --h1margin: 5px;
+  --h1size: 20px;
+  --headerbg: #0000a8;
+}
+
+@font-face {
+    font-family: 'orbitronregular';
+    src: url('https://netescape.neocities.org/fonts/orbitron-regular-webfont.woff2') format('woff2'),
+         url('https://netescape.neocities.org/fonts/orbitron-regular-webfont.woff') format('woff')
+}

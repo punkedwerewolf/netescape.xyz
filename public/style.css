@@ -1,0 +1,208 @@
+/* this is called a CSS reset, it removes default styles from your page */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* main shit */
+
+body {
+  color: black;
+  background-color: black;
+  background-image: url('/images/stars3.gif');
+  font-family: arial;
+}
+
+#everything {
+  margin: 75px auto;
+  height: 700px;
+  width: 850px;
+  min-width: 850px;
+  background-color: silver;
+  padding: 3px;
+  
+}
+
+#topbar {
+  background-color: #252b7d;
+  width: 845px;
+  height: 18px;
+  padding: 2px 2px;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  position: relative;
+}
+
+#nav {
+  width: 845px;
+  clear: both;
+  padding: 5px 2px;
+  font-family: arial;
+}
+
+#nav ul {
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	float: left;
+	width: auto;
+	height:30px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav a {
+	color: black;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+#belownav hr {
+  width: 840px;
+  border: 2px inset white;
+  margin: 0px auto 4px auto;
+}
+
+#belownav {
+  padding: 2px 0px; 
+  height: 40px;
+  width: 845px;
+  clear: both;
+}
+
+.left-button {
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  margin-left: 10px;
+}
+
+.mid-button {
+  border-top: 1px black solid;
+  border-left: 0px transparent;
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+}
+
+#bruh {
+  padding: 30px 15px 0px 15px; 
+  font-weight: bold;
+  width: 845px;
+  height: auto;
+  clear: both;
+  position: relative;
+}
+
+#bruh span {
+  background-color: white;
+  border: 1px black solid;
+  padding: 5px 20px 5px 48%;
+  width: 300px;
+}
+
+iframe {
+  margin: 10px 5px;
+  width: 840px;
+  height: 500px;
+}
+
+/* overlay */
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
+    background-image: url(/images/computeroverlay.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    z-index: 10000000;
+    animation: ScanlineAnimationLeft 2s linear infinite;
+    animation-name: ScanlineAnimationLeft;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+    opacity: 1;
+}
+
+@keyframes ScanlineAnimationRight {
+  	  0% {transform: translateX(0px) translateY(0px);}100% {transform: translateX(32px) translateY(-32px);}
+  	  }
+      @keyframes ScanlineAnimationLeft {
+  	  0% {transform: translateX(0px) translateY(0px);}100% {transform: translateX(-32px) translateY(-32px);}
+  	  }
+  	 
+
+/* misc styles */
+
+
+/* All stuff below here is for viewing your site on different devices */
+
+@media screen and (max-width: 1536px) {
+	body { zoom: 80%; }
+}
+
+@media screen and (max-width: 1440px) {
+	body { zoom: 75%; }
+}
+
+@media screen and (max-width: 1366px) {
+	body { zoom: 70%; }
+}
+
+@media screen and (max-width: 1280px) {
+	body { zoom: 65%; }
+}
+
+@media screen and (max-width: 1024px) {
+	body { zoom: 60%; }
+}
+
+@media screen and (max-width: 992px) {
+	body { zoom: 55%; }
+}
+
+@media screen and (max-width: 800px) {
+	body { zoom: 50%; }
+}
+
+@media screen and (max-width: 600px) {
+	body { zoom: 45%; }
+}
+
